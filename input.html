@@ -1,0 +1,20 @@
+<input id="num1">
+<input id ="num2">
+
+<button onclick="result1()">click</button>
+<p id="result">Result</p>
+
+<script>
+    var a=document.getElementById("num1")
+    var b= document.getElementById("num2")
+    var result=document.getElementById("result")
+
+    function result1()
+    {
+        var value1=Number(a.value)
+        var value2= Number (b.value)
+        var res= value1 + value2 
+        result.textContent=res
+
+    }
+</script>

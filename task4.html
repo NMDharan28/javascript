@@ -1,0 +1,23 @@
+<h1 id="name">Name</h1>
+<button id ="n1" onclick ="change1()">John</button>
+<button id="n2" onclick ="change2()">praveen</button>
+<button id="n3" onclick ="change3()">Karthi</button>
+
+<script>
+    var hi=document.getElementById("name")
+    var name1=document.getElementById("n1")
+   var name2=document.getElementById("n2")
+   var name3=document.getElementById("n3")
+
+    function change1()
+    {
+       hi.textContent=name1.textContent
+    }
+    function change2()
+    {hi.textContent=name2.textContent
+    }
+    function change3()
+    {
+      hi.textContent=name3.textContent
+    }
+</script>

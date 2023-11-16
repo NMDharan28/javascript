@@ -1,0 +1,18 @@
+<P>no need for onclick function
+   easy to add many events on the one element
+</P>
+
+<button id="btn">show</button>
+
+<script>
+    var a=document.getElementById("btn")
+    a.addEventListener("click", function(){
+        alert("Hi")
+    })
+
+   a.addEventListener("mouseover", function(){
+       alert("mouseover")
+    })
+
+
+</script>

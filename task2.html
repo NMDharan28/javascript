@@ -1,0 +1,16 @@
+<button onclick="change()">ADD</button>
+
+<div id="result"></div>
+
+
+<script>
+    //select element
+    var result=document.getElementById("result")
+    function change()
+    {
+        var list=document.createElement("h2")
+        list.textContent="Hello"
+        result.append(list)
+    }
+
+</script>

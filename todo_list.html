@@ -1,0 +1,55 @@
+<body>
+
+    <style>
+    body{
+        background-color: black;
+    }
+    h1{
+        color:white;
+    }
+    .box{
+        margin-left: 600px;
+        text-align: left
+    }
+    li{
+        color: aliceblue;
+    }
+        
+    </style>
+
+<div class="box">
+<h1> TODO LIST</h1>
+<h2>dfdsfsd</h2>
+<input id="input" placeholder="Enter your work todo">
+<button onclick="add()">Add</button>
+
+<ol id="list">
+    <p>\]sdfdsaf</p>
+    <p>\]sdfdsaf</p>
+    <li>Hello
+        <button onclick="deleteitem(event)">Delete</button>
+    </li>
+</ol>
+
+</div>
+
+<script>
+    var ul=document.getElementById("list")
+    var input=document.getElementById("input")
+
+     function add()
+    {
+        var listitem=document.createElement("li")
+        listitem.innerHTML=input.value +"<button onclick='deleteitem(event)'> Delete <button>"
+        ul.append(listitem)
+        
+    }
+    function deleteitem(event)
+
+    {
+        event.target.parentElement.remove()
+    }
+    
+    
+</script>
+</body>
